@@ -26,7 +26,12 @@ export default function Home() {
 
         <Grid className="project">
           {projects.map((project) => (
-            <Card key={project.id} href={project.subdomain}>
+            <Card
+              key={project.id}
+              href={project.subdomain}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <h3>{project.name}</h3>
               <p>{project.description}</p>
             </Card>
